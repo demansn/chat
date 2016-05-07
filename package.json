@@ -1,0 +1,30 @@
+{
+  "name": "chat",
+  "version": "0.0.1",
+  "description": "chat",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/demansn/chat.git"
+  },
+  "keywords": [
+    "AJAX",
+    "COMET",
+    "WebSocket",
+    "NODEJS",
+    "HTML5"
+  ],
+  "author": "demansn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/demansn/chat/issues"
+  },
+  "homepage": "https://github.com/demansn/chat#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
