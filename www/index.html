@@ -4,6 +4,27 @@
 	<title>Chat</title>
 </head>
 <body>
-hello
+	<div></div>
+	<script type="text/javascript">
+		var xhr = new XMLHttpRequest();
+
+		xhr.open('POST', '/connect', true);
+		xhr.setRequestHeader('Content-type', 'application/json; charset=utf-8');
+
+		xhr.onreadystatechange = logStatus;
+
+		xhr.onload = function(e){
+			console.log(this.responseText);
+		};
+
+		xhr.send(JSON.stringify({event:1, id: 'demansn'}));
+
+		logStatus();
+
+		function logStatus (){
+			console.log(xhr.readyState);
+		}
+
+	</script>
 </body>
 </html>
